@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+  <div class="header">
+    <h1>Bad Dad Jokes!!</h1>
+  </div>
+  <div class="container">
+      <h2>Do You Want to Hear a Dad Joke?</h2>
+      <h3 id = "Joke">Why do fathers take an extra pair of socks when golfing?</h3>
+      <img src="https://images.unsplash.com/photo-1535131749006-b7f58c99034b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Z29sZnxlbnwwfHwwfHw%3D&w=1000&q=80">
+      <ul>
+        <li>
+          <button type = "button" onclick="Joke();">Why?</button>
+        </li>
+        <li>
+
+        </li>
+      </ul>
+  </div>
+  <div class="button center">
+    <input id="reset" type="reset" onclick="function();" value="Reset"/>
+  </div>
+  <hr>
+
+  <footer>
+	  <p>Copyright &copy; 2020 Hayley Gold</p>
+  </footer>
+
+
+  <script>
+    function Joke(){
+      document.getElementById("Joke").innerHTML = "In case they get a hole in one!"
+    }
+
+    document.getElementById('reset').onclick = function(){
+      document.getElementById('Joke').innerHTML = "Why do fathers take an extra pair of socks when golfing?";
+    };
+  </script>
+</body>
