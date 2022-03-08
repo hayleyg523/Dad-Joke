@@ -74,5 +74,13 @@ footer {
 
 hr {
   color: white;
+}
 
+h2:hover {
+  font-size: 40px;
+  color: white;
+  transition: 2s;
+  background-color: black;
+  text-decoration: underline;
+  text-decoration-color: white;
 }
